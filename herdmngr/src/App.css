@@ -1,0 +1,142 @@
+/* Logo */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Testo "HerdManager" */
+.header-title {
+  color: #28a745;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Pulsante Indietro */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 30px; /* Bordi arrotondati */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.back-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Icona freccia */
+.back-button span {
+  font-size: 1.2rem;
+}
+
+.logout-button {
+  display: flex;
+  gap: 8px;
+  background-color: #939493;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 30px; /* Bordi arrotondati */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logout-button:hover {
+  background-color: #626762;
+  transform: scale(1.05);
+}
+
+/* Stile base per i pulsanti */
+.category-button {
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+/* Contenitore pulsanti con spazio tra loro */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Aumenta la distanza tra i pulsanti */
+  margin-top: 30px; /* Sposta i pulsanti più in basso */
+  margin-top: 30px; /* Sposta più in basso i pulsanti */
+}
+
+/* Pulsanti Allevatori (rosso) */
+.red-button {
+  background-color: #e63946;
+  color: white;
+}
+
+.red-button:hover {
+  background-color: #c62828;
+}
+
+/* Pulsanti Veterinari (celeste) */
+.blue-button {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.blue-button:hover {
+  background-color: #1565c0;
+}
+
+/* modifica password */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.modal button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Pulsante per le varie operazioni */
+.operation-button {
+  background-color: #900572;
+}
+
+.operation-button:hover {
+  background-color: rgb(95, 3, 113);
+}

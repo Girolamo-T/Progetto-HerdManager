@@ -7,12 +7,15 @@ const ListaClienti = () => {
   const [clienteSelezionato, setClienteSelezionato] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/clienti')
-      .then(response => response.json())
-      .then(data => setClienti(data))
-      .catch(error => console.error('Errore nel recupero dati:', error));
-  }, []);
-
+    const fetchClienti = async () => {
+      try {
+        const response = await axios.get('http://localhost:5001/api/clienti');
+        setClienti(response.data);
+      } catch (error) {
+        console.error('Errore nel recupero dati:', error);
+      }
+    };
+    
   return (
     <div className="flex flex-col items-center">
       <Header showBack={true} />
